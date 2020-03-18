@@ -1,2 +1,33 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
+.Kleur-1{
+    min-height: 30rem;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url(../img/Diag_lijnen.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Kleur-2{
+    background-color: rgb(83,0,122);
+}
+.Kleur-3{
+    background-color: rgb(144,94,237);
+}
+.Kleur-4{
+    background-color: rgb(83,0,122);
+    color:#ffffff;
+}
+
+.Kleur-5{
+    background-color: rgb(144,94,237)
+}
+.Title-Kleur{
+    color: #1ABEBD;
+}
