@@ -3,7 +3,8 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
 }
@@ -30,7 +31,12 @@ body {
     text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
 }
 
@@ -65,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 45px;
 }
 
-.scroll-to-top:focus, .scroll-to-top:hover {
+.scroll-to-top:focus,
+.scroll-to-top:hover {
     color: #fff;
 }
 
@@ -141,7 +148,8 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(255, 255, 255, .2);
 }
 
-.sidebar-nav li a:active, .sidebar-nav li a:focus {
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
     text-decoration: none;
 }
 
@@ -183,7 +191,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 999;
 }
 
-.menu-toggle:focus, .menu-toggle:hover {
+.menu-toggle:focus,
+.menu-toggle:hover {
     color: #fff;
 }
 
@@ -307,13 +316,17 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
     background-color: #155d74;
     text-decoration: none;
-};
+}
+
+;
 
 a {
     color: #1d809f
 }
 
-a:active, a:focus, a:hover {
+a:active,
+a:focus,
+a:hover {
     color: #155d74;
 }
 
@@ -323,7 +336,9 @@ a:active, a:focus, a:hover {
     color: #fff !important;
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
     background-color: #155d74 !important;
     border-color: #155d74 !important;
 }
@@ -334,7 +349,9 @@ a:active, a:focus, a:hover {
     color: #fff !important;
 }
 
-.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:hover {
     background-color: #ba9106 !important;
     border-color: #ba9106 !important;
 }
@@ -358,4 +375,82 @@ a:active, a:focus, a:hover {
 
 .text-secondary {
     color: #ecb807 !important;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 120px;
+    padding-bottom: 25rem;
+    /*    margin-top: 4.5em;*/
+}
+
+.inner h1,
+.inner p {
+    color: #000;
+}
+
+.inner p {
+    font-size: 15px;
+}
+
+.inner {
+    margin: 0.5em;
+    border-radius: 10px;
+    padding: 3em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0, 0.2);
+}
+
+.inner:nth-child(1) {
+    background-color: rgb(83, 0, 122);
+    clip-path: circle(10% at 98% 95%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:nth-child(2) {
+    background-color: rgb(157, 0, 230);
+    clip-path: circle(10% at 2% 95%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:nth-child(3) {
+    background-color: rgb(80, 0, 230);
+    clip-path: circle(10% at 98% 5%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:nth-child(4) {
+    background-color: rgb(204, 0, 255);
+    clip-path: circle(10% at 2% 5%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:hover {
+    clip-path: circle(100%);
+}
+
+
+
+@media (min-width: 992px) {
+    #zichtbaarklein {
+        display: none;
+    }
+
+    #zichtbaargroot {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    #zichtbaarklein {
+        display: block;
+    }
+
+    #zichtbaargroot {
+        display: none;
+    }
 }
