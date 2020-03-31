@@ -4,248 +4,338 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Webbureau voor een opdracht van webdesign">
-    <meta name="author" content="Ilya Goosens, Robin Van de Velde, Michiel Vandezande">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Webbureau voor een opdracht van webdesign" name="description">
+    <meta content="Ilya Goosens, Robin Van de Velde, Michiel Vandezande" name="author">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#55bbe2">
-    <link rel="shortcut icon" href="favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#55bbe2">
-    <meta name="msapplication-config" content="favicons/browserconfig.xml">
-    <meta name="theme-color" content="#55bbe2">
+
+    <link href="favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link color="#55bbe2" href="favicons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="favicons/favicon.ico" rel="shortcut icon">
+
+    <meta content="#55bbe2" name="msapplication-TileColor">
+    <meta content="favicons/browserconfig.xml" name="msapplication-config">
+    <meta content="#55bbe2" name="theme-color">
 
     <title>Stylish-portfolio - Bootstrap Theme</title>
 
     <!-- CSS: Bootstrap, stylish portfolio, FA5 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
-    <link rel="stylesheet" href="css/stylish-portfolio.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
     <!-- CSS: eigen stylesheet -->
-    <link rel="stylesheet" href="css/webBureau.css">
+    <link href="css/webBureau.css" rel="stylesheet">
+
+<!--    PHP: link naar PHP pagina-->
+    <link rel="stylesheet" href="PHP/Webbureau.php">
 
 </head>
+
 <body id="page-top">
 
-<!-- Navigation -->
-<a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-</a>
-<nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-    </ul>
-</nav>
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
 
-<!-- Header -->
-<div class="Kleur-1">
-    <header class="masthead d-flex">
-        <div class="container text-center my-auto">
-            <img src="img/Logo.svg" alt="Logo"
-            width="40%" height="40%">
-            <h1 class="mb-1">bitGate</h1>
-        </div>
-        <div class="overlay"></div>
-    </header>
-</div>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#page-top">Home</a>
+            </li>
 
-<!-- About -->
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#services">Wie wij zijn</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#footer">Footer</a>
+            </li>
+        </ul>
+    </nav>
 
-<!-- Services -->
-<div class="Kleur-2">
-    <section class="content-section  text-white text-center" id="services">
-        <div class="container">
-            <div class="content-section-heading">
-                <h3 class="mb-0 Title-Kleur">Wie</h3>
-                <h2 class="mb-5">Wie wij zijn</h2>
+    <!-- Header -->
+    <div class="Kleur-1">
+        <header class="masthead d-flex">
+            <div class="container text-center my-auto">
+
+                <img alt="Logo" height="40%" src="img/Logo.svg" width="40%">
+
+                <h1 class="mb-1">bitGate</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-                    <h4>
-                        <strong>Responsive</strong>
-                    </h4>
-                    <p class=" mb-0">Looks great on any screen size!</p>
+            <div class="overlay"></div>
+        </header>
+    </div>
+
+    <!-- About -->
+
+    <!-- Services -->
+    <div class="Kleur-2">
+        <section class="content-section  text-white text-center" id="services">
+            <div class="container">
+                <div class="content-section-heading">
+                    <h3 class="mb-0 Title-Kleur">Wie</h3>
+                    <h2 class="mb-5">Wie wij zijn</h2>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-                    <h4>
-                        <strong>Redesigned</strong>
-                    </h4>
-                    <p class="mb-0">Freshly redesigned for Bootstrap 4.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-                    <h4>
-                        <strong>Favorited</strong>
-                    </h4>
-                    <p class=" mb-0">Millions of users
-                        <i class="fas fa-heart"></i>
-                        Start Bootstrap!</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-                    <h4>
-                        <strong>Question</strong>
-                    </h4>
-                    <p class="mb-0">I mustache you a question...</p>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-screen-smartphone"></i>
+                        </span>
+                        <h4>
+                            <strong>Responsive</strong>
+                        </h4>
+                        <p class=" mb-0">Looks great on any screen size!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-pencil"></i>
+                        </span>
+                        <h4>
+                            <strong>Redesigned</strong>
+                        </h4>
+                        <p class="mb-0">Freshly redesigned for Bootstrap 4.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-like"></i>
+                        </span>
+                        <h4>
+                            <strong>Favorited</strong>
+                        </h4>
+                        <p class=" mb-0">Millions of users
+                            <i class="fas fa-heart"></i>
+                            Start Bootstrap!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-mustache"></i>
+                        </span>
+                        <h4>
+                            <strong>Question</strong>
+                        </h4>
+                        <p class="mb-0">I mustache you a question...</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
-<!-- Callout -->
+    <!-- Callout -->
 
-<!-- Portfolio -->
-<div class="Kleur-3">
-    <section class="content-section" id="portfolio">
-        <div class="container">
+    <!-- Portfolio -->
+    <div class="Kleur-3">
+        <section class="content-section" id="portfolio">
             <div class="content-section-heading text-center">
                 <h3 class="Title-Kleur mb-0">Portfolio</h3>
                 <h2 class="mb-5">Recente Projecten</h2>
             </div>
-            <div class="row no-gutters">
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Stationary</h2>
-                                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Ice Cream</h2>
-                                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice
-                                    cream
-                                    cone!</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Strawberries</h2>
-                                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on
-                                    top!</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Workspace</h2>
-                                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-                    </a>
+            <div id="zichtbaargroot">
+                <div class="container2">
+
+                    <div class="inner">
+                        <h1>Webbureau Ilya</h1>
+                        <a href="https://ilya.sinners.be/">
+                            <p>Klik op deze link</p>
+                        </a>
+                    </div>
+
+
+                    <div class="inner">
+                        <h1>Webbureau Michiel</h1>
+                        <a href="https://michielvdz.sinners.be/">
+                            <p>Klik op deze link.</p>
+                        </a>
+                    </div>
+
+
+                    <div class="inner">
+                        <h1>Webbureau Robin</h1>
+                        <a href="https://robin.sinners.be/">
+                            <p>Klik op deze link.</p>
+                        </a>
+                    </div>
+
+                    <div class="inner">
+                        <h1>welcome</h1>
+                        <p>lorem ipsum</p>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
-</div>
 
-<!-- Call to Action -->
 
-<!-- Contact -->
-<div class="Kleur-4">
-    <section id="contact" class="content-section">
-        <div class="container text-center">
-            <div class="content-section-heading text-center">
-                <h3 class="mb-0 Title-Kleur">Contact</h3>
-                <h2 class="mb-5">Contacteer ons</h2>
+            <div class="container" id="zichtbaarklein">
+
+
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <div class="caption">
+                                <div class="caption-content">
+
+                                    <h2>Webbureau Ilya</h2>
+                                    <a href="https://ilya.sinners.be/">
+                                        <p class="mb-0">Klik op deze link.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="../dist/images_projecten/webbureau_ilya.PNG" alt="">
+
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <div class="caption">
+                                <div class="caption-content">
+
+                                    <h2>Webbureau Michiel</h2>
+                                    <a href="https://michielvdz.sinners.be/">
+                                        <p class="mb-0">Klik op deze link.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images_projecten/webbureau_michiel.PNG" alt="">
+
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <div class="caption">
+                                <div class="caption-content">
+
+                                    <h2>Webbureau Robin</h2>
+                                    <a href="https://robin.sinners.be/">
+                                        <p class="mb-0">Klik op deze link.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images_projecten/webbureau_robin.PNG" alt="">
+
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h2>Workspace</h2>
+                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                </div>
+
+                            </div>
+                            <img alt="" class="img-fluid" src="img/portfolio-4.jpg">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, explicabo iusto? Adipisci aliquam
-                animi
-                autem, cupiditate doloremque enim id nulla numquam quae quasi, qui quidem tempore vel, veniam voluptatem
-                voluptatibus!</p>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
-<!-- Footer -->
-<div class="Kleur-5">
-    <footer class="footer text-center">
-        <div class="container">
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#">
-                        <i class="icon-social-facebook"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#">
-                        <i class="icon-social-twitter"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="#">
-                        <i class="icon-social-github"></i>
-                    </a>
-                </li>
-            </ul>
-            <p class=" small mb-0">Copyright &copy; Your Website 2019</p>
-        </div>
-    </footer>
-</div>
+    <!-- Call to Action -->
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
+    <!-- Contact -->
+    <div class="Kleur-4">
+        <section class="content-section" id="contact">
+            <div class="container">
+                <div class="content-section-heading ">
+                    <h3 class="mb-0 Title-Kleur text-center">Contact</h3>
+                    <h2 class="mb-5 text-center">Contacteer ons</h2>
+                </div>
+                <form action="PHP/Webbureau.php" method="post">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p><label for="naam">Naam?</label></p>
+                                    <p><input id="naam" maxlength="20" name="gebruikersnaam" placeholder="Voer hier u naam in" required type="text"></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p><label for="email">Email?</label></p>
+                                    <p><input id="email" maxlength="50" name="email" placeholder="Voer hier u email in" required type="email"></p>
+                                </div>
+                            </div>
+                            <p><label for="bericht">Bericht?</label></p>
+                                <p><textarea class="form-control" rows="4" id="bericht" name="bericht" required  maxlength="250"></textarea></p></>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4>Wat vind je van deze site?</h4>
+                            <p><input id="zeer goed" name="rating" type="radio" value="Zeer goed">
+                                <label for="zeer goed">Zeer goed</label></p>
+                            <p><input id="goed" name="rating" type="radio" value="Goed">
+                                <label for="goed">Goed</label></p>
+                            <p><input id="neutraal" name="rating" type="radio" value="Neutraal">
+                                <label for="neutraal">Neutraal</label></p>
+                            <p><input id="slecht" name="rating" type="radio" value="Slecht">
+                                <label for="slecht">Slecht</label>
+                            </p>
+                            <p><input id="zeer slecht" name="rating" type="radio" value="Zeer slecht">
+                                <label for="zeer slecht">Zeer slecht</label></p>
+                        </div>
+                    </div>
+                    <div class="text-md-center">
+                        <p><input type="submit" value="Versturen"> <input type="reset" value="Resetten"></p>
+                    </div>
 
-<!-- JS: jQuery, Bootstrap, stylish portfolio -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-<script src="js/stylish-portfolio.min.js"></script>
+                </form>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="Kleur-5">
+
+        <footer class="footer text-center" id="footer">
+
+            <div class="container">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#">
+                            <i class="icon-social-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#">
+                            <i class="icon-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#">
+                            <i class="icon-social-github"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class=" small mb-0">Copyright &copy; Your Website 2020</p>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- JS: jQuery, Bootstrap, stylish portfolio -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="js/stylish-portfolio.min.js"></script>
+
 
 </body>
 
 </html>
+
