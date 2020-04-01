@@ -1,5 +1,6 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
+
 body{
     font-family: 'Raleway', sans-serif; !important;
 }
@@ -17,23 +18,27 @@ body{
     background-size: cover;
 }
 
-.Kleur-2{
-    background-color: rgb(83,0,122);
+.Kleur-2 {
+    background-color: rgb(83, 0, 122);
 }
+
 .Kleur-3{
     background-color: rgb(255,255,255);
 }
-.Kleur-4{
-    background-color: rgb(83,0,122);
-    color:#ffffff;
+
+.Kleur-4 {
+    background-color: rgb(83, 0, 122);
+    color: #ffffff;
 }
 
-.Kleur-5{
-    background-color: rgb(144,94,237)
+.Kleur-5 {
+    background-color: rgb(144, 94, 237)
 }
-.Title-Kleur{
+
+.Title-Kleur {
     color: #1ABEBD;
 }
+
 @media (min-width: 990px) {
     #zichtbaarklein {
         display: none;
@@ -55,6 +60,21 @@ body{
 }
 
 
+
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 120px;
+    padding-bottom: 25rem;
+    /*    margin-top: 4.5em;*/
+}
+
+.inner h1,
+.inner p {
+    color: #000;
+}
+
 .inner p {
     font-size: 15px;
 }
@@ -63,7 +83,9 @@ body{
     margin: 0.5em;
     border-radius: 10px;
     padding: 3em;
+
     box-shadow: 0px 0px 5px rgba(0, 0, 0,  0.2);
+
 }
 
 .inner:nth-child(1) {
@@ -97,48 +119,104 @@ body{
 .inner:hover {
     clip-path: circle(100%);
 }
-.container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+
+
+
+@media (min-width: 992px) {
+    #zichtbaarklein {
+        display: none;
+    }
+
+    #zichtbaargroot {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    #zichtbaarklein {
+        display: block;
+    }
+
+    #zichtbaargroot {
+        display: none;
+    }
+}
+
+.ilya {
+    border-radius: 50%;
     height: 120px;
-    padding-bottom: 25rem;
-    color: #ffffff;
-    /*    margin-top: 4.5em;*/
-}
-.img-stijl{
-    border: 4px solid #000000;
-    border-radius: 30px 0px;
-    margin: 20px;
-}
-.img-stijl2{
-    border: 4px solid #000000;
-    border-radius: 0px 30px;
-    margin: 20px;
-}
-.inner>a{
-    color: #ffffff;
-    text-decoration: underline;
-}
-.inner>a:hover{
-    color: #1ABEBD;
-    text-decoration: underline;
-}
-.nav-kleur{
-    position: fixed;
-    z-index: 2;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    transition: all .4s ease 0s;
-    background: rgb(144,94,237); !important;
-    transform: translateX(250px);
-    border-left: 1px solid rgba(255, 255, 255, .1);
 
 }
-.nav-kleur.active {
-    right: 250px;
-    width: 250px;
-    transition: all .4s ease 0s;
+
+.michiel {
+    border-radius: 50%;
+    height: 120px;
 }
 
+.robin {
+    border-radius: 50%;
+    height: 120px;
+
+}
+
+.naaronder {
+    padding-top: 5%;
+}
+
+.scaler {
+    border-radius: 50%;
+    position: absolute;
+    left: 32.7%;
+    transform: scaleY(0.01);
+    transition: transform .5s;
+    width: 35%;
+    height: 68%;
+    top: -7px
+}
+
+.scaler:hover {
+    transform: scaleY(1);
+}
+
+
+@media (max-width:766px) {
+    .scaler {
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        left: 38%;
+        transform: scaleY(0);
+        transition: transform .5s;
+    }
+
+    .scaler:hover img {
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width:990px) and (min-width:767px) {
+    .scaler {
+        width: 37%;
+        height: 75%;
+        left: 31.5%
+    }
+
+    .scalerrobin {
+        margin-left: 49%;
+        height: 70%;
+        top: -10px;
+    }
+
+    .robinlinks {
+        margin-left: 85%;
+    }
+
+    .tekstnaarrechts {
+        margin-left: 52.5%;
+        width: 100%
+    }
+}
 
