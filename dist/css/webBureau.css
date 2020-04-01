@@ -1,6 +1,6 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
-.Kleur-1{
+.Kleur-1 {
     min-height: 30rem;
     position: relative;
     display: table;
@@ -14,20 +14,180 @@
     background-size: cover;
 }
 
-.Kleur-2{
-    background-color: rgb(83,0,122);
+.Kleur-2 {
+    background-color: rgb(83, 0, 122);
 }
+
 .Kleur-3{
     background-color: rgb(255,255,255);
 }
-.Kleur-4{
-    background-color: rgb(83,0,122);
-    color:#ffffff;
+
+.Kleur-4 {
+    background-color: rgb(83, 0, 122);
+    color: #ffffff;
 }
 
-.Kleur-5{
-    background-color: rgb(144,94,237)
+.Kleur-5 {
+    background-color: rgb(144, 94, 237)
 }
-.Title-Kleur{
+
+.Title-Kleur {
     color: #1ABEBD;
 }
+
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 120px;
+    padding-bottom: 25rem;
+    /*    margin-top: 4.5em;*/
+}
+
+.inner h1,
+.inner p {
+    color: #000;
+}
+
+.inner p {
+    font-size: 15px;
+}
+
+.inner {
+    margin: 0.5em;
+    border-radius: 10px;
+    padding: 3em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0, 0.2);
+}
+
+.inner:nth-child(1) {
+    background-color: rgb(83, 0, 122);
+    clip-path: circle(10% at 98% 95%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:nth-child(2) {
+    background-color: rgb(157, 0, 230);
+    clip-path: circle(10% at 2% 95%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:nth-child(3) {
+    background-color: rgb(80, 0, 230);
+    clip-path: circle(10% at 98% 5%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:nth-child(4) {
+    background-color: rgb(204, 0, 255);
+    clip-path: circle(10% at 2% 5%);
+    transition: clip-path .5s linear;
+    cursor: pointer;
+}
+
+.inner:hover {
+    clip-path: circle(100%);
+}
+
+
+
+@media (min-width: 992px) {
+    #zichtbaarklein {
+        display: none;
+    }
+
+    #zichtbaargroot {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    #zichtbaarklein {
+        display: block;
+    }
+
+    #zichtbaargroot {
+        display: none;
+    }
+}
+
+.ilya {
+    border-radius: 50%;
+    height: 120px;
+
+}
+
+.michiel {
+    border-radius: 50%;
+    height: 120px;
+}
+
+.robin {
+    border-radius: 50%;
+    height: 120px;
+
+}
+
+.naaronder {
+    padding-top: 5%;
+}
+
+.scaler {
+    border-radius: 50%;
+    position: absolute;
+    left: 32.7%;
+    transform: scaleY(0.01);
+    transition: transform .5s;
+    width: 35%;
+    height: 68%;
+    top: -7px
+}
+
+.scaler:hover {
+    transform: scaleY(1);
+}
+
+
+@media (max-width:766px) {
+    .scaler {
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        left: 38%;
+        transform: scaleY(0);
+        transition: transform .5s;
+    }
+
+    .scaler:hover img {
+        transform: scale(1);
+    }
+}
+
+
+
+@media (max-width:990px) and (min-width:767px) {
+    .scaler {
+        width: 37%;
+        height: 75%;
+        left: 31.5%
+    }
+
+    .scalerrobin {
+        margin-left: 49%;
+        height: 70%;
+        top: -10px;
+    }
+
+    .robinlinks {
+        margin-left: 85%;
+    }
+
+    .tekstnaarrechts {
+        margin-left: 52.5%;
+        width: 100%
+    }
+}
+
