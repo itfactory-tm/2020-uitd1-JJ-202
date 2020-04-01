@@ -34,7 +34,8 @@
 
 <!--    PHP: link naar PHP pagina-->
     <link rel="stylesheet" href="PHP/Webbureau.php">
-
+<!--    Font: Link naar google font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -43,7 +44,7 @@
     <a class="menu-toggle rounded" href="#">
         <i class="fas fa-bars"></i>
     </a>
-    <nav id="sidebar-wrapper">
+    <nav class="nav-kleur">
         <ul class="sidebar-nav">
 
             <li class="sidebar-nav-item">
@@ -147,31 +148,31 @@
                 <div class="container2">
 
                     <div class="inner">
-                        <h1>Webbureau Ilya</h1>
+                        <h2>Webbureau Ilya</h2>
                         <a href="https://ilya.sinners.be/">
-                            <p>Klik op deze link</p>
+                            Klik op deze link
                         </a>
                     </div>
 
 
                     <div class="inner">
-                        <h1>Webbureau Michiel</h1>
+                        <h2>Webbureau Michiel</h2>
                         <a href="https://michielvdz.sinners.be/">
-                            <p>Klik op deze link.</p>
+                            Klik op deze link.
                         </a>
                     </div>
 
 
                     <div class="inner">
-                        <h1>Webbureau Robin</h1>
+                        <h2>Webbureau Robin</h2>
                         <a href="https://robin.sinners.be/">
-                            <p>Klik op deze link.</p>
+                            Klik op deze link.
                         </a>
                     </div>
 
                     <div class="inner">
-                        <h1>welcome</h1>
-                        <p>lorem ipsum</p>
+                        <h2>Uitdaging 2</h2>
+                        <p>Nog onder constructie</p>
                     </div>
 
                 </div>
@@ -180,67 +181,44 @@
 
             <div class="container" id="zichtbaarklein">
 
-
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
                             <div class="caption">
                                 <div class="caption-content">
 
                                     <h2>Webbureau Ilya</h2>
-                                    <a href="https://ilya.sinners.be/">
-                                        <p class="mb-0">Klik op deze link.</p>
-                                    </a>
+                                    
                                 </div>
                             </div>
-                            <img class="img-fluid" src="../dist/images_projecten/webbureau_ilya.PNG" alt="">
+                            <a href="https://ilya.sinners.be"><img class="img-fluid img-stijl" src="img/webbureau_ilya.PNG" alt="Webureau Ilya"></a>
 
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
                             <div class="caption">
                                 <div class="caption-content">
 
                                     <h2>Webbureau Michiel</h2>
-                                    <a href="https://michielvdz.sinners.be/">
-                                        <p class="mb-0">Klik op deze link.</p>
-                                    </a>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="images_projecten/webbureau_michiel.PNG" alt="">
+                        <a href="https://michielvdz.sinners.be/"><img class="img-fluid img-stijl2" src="img/webbureau_michiel.PNG" alt="Webureau Michiel"></a>
 
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
-                            <div class="caption">
+                <div class="caption">
                                 <div class="caption-content">
-
                                     <h2>Webbureau Robin</h2>
-                                    <a href="https://robin.sinners.be/">
-                                        <p class="mb-0">Klik op deze link.</p>
-                                    </a>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="images_projecten/webbureau_robin.PNG" alt="">
+                        <a href="https://robin.sinners.be/"><img class="img-fluid img-stijl" src="img/webbureau_robin.PNG" alt="Webureau Robin">
 
                         </a>
-                    </div>
+
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#">
+
                             <div class="caption">
                                 <div class="caption-content">
-                                    <h2>Workspace</h2>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    <h2>Uitdaging 2</h2>
                                 </div>
-
                             </div>
-                            <img alt="" class="img-fluid" src="img/portfolio-4.jpg">
-                        </a>
+                            <img alt="Onder consturctie" class="img-fluid img-stijl2" src="img/Uitdaging2.jpg">
+
                     </div>
                 </div>
-            </div>
+
         </section>
     </div>
 
@@ -268,12 +246,12 @@
                                 </div>
                             </div>
                             <p><label for="bericht">Bericht?</label></p>
-                                <p><textarea class="form-control" rows="4" id="bericht" name="bericht" required  maxlength="250"></textarea></p></>
+                                <p><textarea class="form-control" rows="4" id="bericht" name="bericht" required  maxlength="250"></textarea></p>
                         </div>
                         <div class="col-lg-6">
                             <h4>Wat vind je van deze site?</h4>
-                            <p><input id="zeer goed" name="rating" type="radio" value="Zeer goed">
-                                <label for="zeer goed">Zeer goed</label></p>
+                            <p><input id="zeer_goed" name="rating" type="radio" value="Zeer goed">
+                                <label for="zeer_goed">Zeer goed</label></p>
                             <p><input id="goed" name="rating" type="radio" value="Goed">
                                 <label for="goed">Goed</label></p>
                             <p><input id="neutraal" name="rating" type="radio" value="Neutraal">
@@ -281,13 +259,14 @@
                             <p><input id="slecht" name="rating" type="radio" value="Slecht">
                                 <label for="slecht">Slecht</label>
                             </p>
-                            <p><input id="zeer slecht" name="rating" type="radio" value="Zeer slecht">
-                                <label for="zeer slecht">Zeer slecht</label></p>
+                            <p><input id="zeer_slecht" name="rating" type="radio" value="Zeer slecht">
+                                <label for="zeer_slecht">Zeer slecht</label></p>
                         </div>
-                    </div>
+                        </div>
                     <div class="text-md-center">
                         <p><input type="submit" value="Versturen"> <input type="reset" value="Resetten"></p>
                     </div>
+
 
                 </form>
             </div>

@@ -1,6 +1,10 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
-.Kleur-1 {
+
+body{
+    font-family: 'Raleway', sans-serif; !important;
+}
+.Kleur-1{
     min-height: 30rem;
     position: relative;
     display: table;
@@ -35,6 +39,28 @@
     color: #1ABEBD;
 }
 
+@media (min-width: 990px) {
+    #zichtbaarklein {
+        display: none;
+    }
+
+    #zichtbaargroot {
+        display: block;
+    }
+}
+
+@media (max-width: 990px) {
+    #zichtbaarklein {
+        display: block;
+    }
+
+    #zichtbaargroot {
+        display: none;
+    }
+}
+
+
+
 
 .container2 {
     display: grid;
@@ -57,7 +83,9 @@
     margin: 0.5em;
     border-radius: 10px;
     padding: 3em;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0, 0.2);
+
+    box-shadow: 0px 0px 5px rgba(0, 0, 0,  0.2);
+
 }
 
 .inner:nth-child(1) {
@@ -91,6 +119,7 @@
 .inner:hover {
     clip-path: circle(100%);
 }
+
 
 
 
