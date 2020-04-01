@@ -18,8 +18,8 @@
     background-color: rgb(83, 0, 122);
 }
 
-.Kleur-3 {
-    background-color: rgb(144, 94, 237);
+.Kleur-3{
+    background-color: rgb(255,255,255);
 }
 
 .Kleur-4 {
@@ -34,6 +34,7 @@
 .Title-Kleur {
     color: #1ABEBD;
 }
+
 
 .container2 {
     display: grid;
@@ -189,3 +190,4 @@
         width: 100%
     }
 }
+
