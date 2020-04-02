@@ -4,6 +4,9 @@
 body{
     font-family: 'Raleway', sans-serif; !important;
 }
+.nav-kleur{
+    background: rgb(144, 94, 237) !important;
+}
 .Kleur-1{
     min-height: 30rem;
     position: relative;
@@ -67,13 +70,11 @@ body{
     grid-template-columns: 1fr 1fr;
     height: 120px;
     padding-bottom: 25rem;
+    color: #ffffff;
     /*    margin-top: 4.5em;*/
 }
 
-.inner h1,
-.inner p {
-    color: #000;
-}
+
 
 .inner p {
     font-size: 15px;
@@ -119,7 +120,14 @@ body{
 .inner:hover {
     clip-path: circle(100%);
 }
-
+.inner>a{
+    color: #ffffff;
+    text-decoration: #ffffff underline;
+}
+.inner>a:hover{
+    color: #1ABEBD;
+    text-decoration: underline;
+}
 
 
 
@@ -142,81 +150,84 @@ body{
         display: none;
     }
 }
+.cartoon{
+    display: none;
+}
 
 .ilya {
     border-radius: 50%;
-    height: 120px;
+    height: 70%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .michiel {
     border-radius: 50%;
-    height: 120px;
+    height: 70%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .robin {
     border-radius: 50%;
-    height: 120px;
+    height: 70%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-.naaronder {
-    padding-top: 5%;
-}
+@media (min-width: 768px) {
 
-.scaler {
-    border-radius: 50%;
-    position: absolute;
-    left: 32.7%;
-    transform: scaleY(0.01);
-    transition: transform .5s;
-    width: 35%;
-    height: 68%;
-    top: -7px
-}
-
-.scaler:hover {
-    transform: scaleY(1);
-}
-
-
-@media (max-width:766px) {
     .scaler {
-        border-radius: 50%;
-        overflow: hidden;
         position: absolute;
-        left: 38%;
-        transform: scaleY(0);
-        transition: transform .5s;
-    }
-
-    .scaler:hover img {
-        transform: scale(1);
-    }
-}
-
-
-
-@media (max-width:990px) and (min-width:767px) {
-    .scaler {
-        width: 37%;
-        height: 75%;
-        left: 31.5%
-    }
-
-    .scalerrobin {
-        margin-left: 49%;
+        transition: 0.5s;
+        opacity: 0;
+        display: inline-block;
+        text-align: center;
         height: 70%;
-        top: -10px;
     }
 
-    .robinlinks {
-        margin-left: 85%;
+    .scaler:hover {
+        transition: 1s;
+        opacity: 1;
+
+    }
+    .cartoon{
+        height: 70%;
+        border-radius: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .tekstnaarrechts {
-        margin-left: 52.5%;
-        width: 100%
-    }
+
 }
+
+
+
+
+
+
+
+.img-stijl{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid #000;
+    border-radius: 30px 0px;
+}
+.img-stijl2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid #000;
+    border-radius: 0px 30px;
+}
+.footer-icoon{
+    background-color: rgb(144, 94, 237) !important;
+}
+
 
